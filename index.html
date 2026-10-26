@@ -2,13 +2,242 @@
 <html lang="ja">
  <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title lang="ja">みしのウェブサイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title lang="ja">BASKETBALL WORLD</title>
+
+  <style>
+   body {
+    margin: 0;
+    font-family: Arial, "Meiryo", sans-serif;
+    background: #111111;
+    color: white;
+   }
+
+   header {
+    background: linear-gradient(135deg, #ff7b00, #d93800);
+    text-align: center;
+    padding: 45px 15px;
+   }
+
+   header h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+    margin: 0;
+    text-shadow: 3px 3px 5px #542000;
+   }
+
+   header p {
+    font-size: 15px;
+    letter-spacing: 4px;
+   }
+
+   nav {
+    background: #222222;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 3px solid #ff7900;
+   }
+
+   nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+   }
+
+   nav a:hover {
+    color: #ff7900;
+   }
+
+   .hero {
+    text-align: center;
+    padding: 70px 20px;
+    background:
+     radial-gradient(circle, #38302a, #111111 70%);
+   }
+
+   .hero h2 {
+    font-size: 34px;
+    color: #ff8c24;
+   }
+
+   .hero p {
+    font-size: 17px;
+    line-height: 2;
+   }
+
+   .button {
+    display: inline-block;
+    background: #ff7900;
+    color: white;
+    padding: 14px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+   }
+
+   .button:hover {
+    background: white;
+    color: #ff7900;
+    transform: scale(1.05);
+   }
+
+   article {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 20px;
+   }
+
+   section {
+    background: #1e1e1e;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+    border-left: 5px solid #ff7900;
+    box-shadow: 0 5px 18px #00000055;
+   }
+
+   h2 {
+    color: #ff922e;
+   }
+
+   h3 {
+    color: #ffc078;
+   }
+
+   p, li {
+    line-height: 1.9;
+   }
+
+   li {
+    margin-bottom: 8px;
+   }
+
+   .highlight {
+    color: #ff922e;
+    font-weight: bold;
+   }
+
+   footer {
+    background: #080808;
+    text-align: center;
+    padding: 25px 10px;
+    color: #aaaaaa;
+    border-top: 2px solid #ff7900;
+   }
+
+   @media (max-width: 600px) {
+    header h1 {
+     font-size: 28px;
+    }
+
+    nav a {
+     display: inline-block;
+     margin: 7px;
+     font-size: 13px;
+    }
+
+    .hero h2 {
+     font-size: 27px;
+    }
+   }
+  </style>
  </head>
+
  <body>
+  <header>
+   <h1 lang="ja">🏀 BASKETBALL WORLD</h1>
+   <p>PASSION · TEAMWORK · VICTORY</p>
+   <p>バスケットボールの魅力を体感しよう！</p>
+  </header>
+
+  <nav>
+   <a href="#about">バスケとは</a>
+   <a href="#rule">基本ルール</a>
+   <a href="#skill">技術紹介</a>
+   <a href="#charm">魅力</a>
+  </nav>
+
+  <div class="hero">
+   <h2>LET'S PLAY BASKETBALL!</h2>
+   <p>
+    スピード、技術、そしてチームワーク。<br>
+    バスケットボールの熱い世界へようこそ！
+   </p>
+   <a href="#about" class="button">バスケの世界を知る →</a>
+  </div>
+
   <article>
-   <h1 lang="ja">みしのウェブサイト</h1>
-   <p>このウェブサイトは、みしが作成したものです。</p>
+   <section id="about">
+    <h2>🏀 バスケットボールとは？</h2>
+    <p>
+     バスケットボールは、2つのチームが得点を競い合うスポーツです。
+     5人ずつの選手がコートに立ち、ドリブルやパスでボールを運び、
+     相手のゴールにシュートを決めます。
+    </p>
+    <p>
+     仲間との協力や瞬時の判断、スピードと正確な技術が重要です。
+    </p>
+   </section>
+
+   <section id="rule">
+    <h2>📋 基本ルール</h2>
+    <ul>
+     <li><span class="highlight">2点シュート：</span>3ポイントラインの内側から決めると2点。</li>
+     <li><span class="highlight">3点シュート：</span>3ポイントラインの外側から決めると3点。</li>
+     <li><span class="highlight">フリースロー：</span>決めると1点。</li>
+     <li><span class="highlight">ドリブル：</span>ボールを床につきながら移動する。</li>
+     <li><span class="highlight">パス：</span>味方にボールを渡して攻撃を組み立てる。</li>
+    </ul>
+   </section>
+
+   <section id="skill">
+    <h2>🔥 バスケットボールの技術</h2>
+
+    <h3>🏃 ドリブル</h3>
+    <p>ボールをコントロールしながら移動し、相手をかわす技術。</p>
+
+    <h3>🎯 シュート</h3>
+    <p>ゴールに向かってボールを投げ、得点を狙う技術。</p>
+
+    <h3>🤝 パス</h3>
+    <p>味方に正確にボールを渡し、チームの攻撃をつなぐ技術。</p>
+
+    <h3>🛡️ ディフェンス</h3>
+    <p>相手の攻撃を防ぎ、ボールを奪うチャンスを作る技術。</p>
+   </section>
+
+   <section id="charm">
+    <h2>⭐ バスケットボールの魅力</h2>
+    <p>
+     バスケットボールの魅力は、試合のスピード感や迫力あるプレー、
+     最後まで勝敗がわからない緊張感です。
+    </p>
+    <p>
+     また、チームメイトと協力して目標に向かうことで、
+     仲間との絆やコミュニケーション能力を育てることもできます。
+    </p>
+   </section>
+
+   <section>
+    <h2>🏆 まとめ</h2>
+    <p>
+     バスケットボールは、技術・体力・判断力・チームワークが
+     組み合わさった魅力あふれるスポーツです。
+    </p>
+    <p class="highlight">
+     仲間を信じて、最後まであきらめずにプレーしよう！
+    </p>
+   </section>
   </article>
+
+  <footer>
+   <p>🏀 BASKETBALL WORLD</p>
+   <p>PASSION · TEAMWORK · VICTORY</p>
+   <p>&copy; 2026 Basketball World</p>
+  </footer>
  </body>
 </html>
+```
